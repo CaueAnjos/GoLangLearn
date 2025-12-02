@@ -2,12 +2,24 @@ package main
 
 import "fmt"
 
-func main() {
-	var pointer *int
-	var number int
-	var boolean bool
+type WeekDay int
 
-	fmt.Println(pointer) // nil
-	fmt.Println(number)  // 0
-	fmt.Println(boolean) // false
+const (
+	Sunday = iota + 1
+	Monday
+	Tuesday
+	Wednesday
+	Thursday
+	Friday
+	Saturday
+)
+
+func main() {
+	fmt.Println(Sunday)
+	fmt.Println(Monday)
+	fmt.Println(Tuesday)
+	fmt.Println(Wednesday)
+	fmt.Println(Thursday)
+	fmt.Println(Friday)
+	fmt.Println(Saturday)
 }
