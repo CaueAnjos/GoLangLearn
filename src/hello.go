@@ -7,7 +7,7 @@ func main() {
 	var number int
 	var boolean bool
 
-	fmt.Println(pointer) //nil
+	fmt.Println(pointer) // nil
 	fmt.Println(number)  // 0
 	fmt.Println(boolean) // false
 }
