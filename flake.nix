@@ -10,7 +10,7 @@
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      devShells.default = pkgs.mkShellNoCC {
+      devShells.default = pkgs.mkShell {
         packages = with pkgs; [
           go
         ];
