@@ -3,6 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	const PI float64 = 3.14
-	fmt.Println(PI)
+	x := 10
+	if true {
+		x := 5
+		fmt.Println(x) // 5
+	}
+	fmt.Println(x) // 10
 }
